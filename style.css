@@ -1,0 +1,273 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* header css ------------------- */
+
+.header{
+    width: 100%;
+    height: auto;
+    background-color: #303030;
+    /* position: relative; */
+    display: inline-block;
+}
+
+.header-icon{
+    margin-top: 1%  ;
+    margin-left: 4%;
+    width: auto;
+    float: left;
+}
+
+.header-logo{
+    width: 60px;
+}
+
+.header-items{
+    float: right;
+    margin-right: 10%;
+}
+
+.header-items-btn{
+    background-color: #303030;
+    border: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    height: 100px;
+}
+/* .header-items-btn:hover{
+    background-color: white;
+    color: black;
+} */
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+.dropdown-content a:hover {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: red;
+  }
+
+
+.nav-dropdown-content{
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Courier New', Courier, monospace;
+}
+.nav-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+
+.nadropdown-content a:hover {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: red;
+  }
+
+  .hamburg {
+    display: none;
+    margin-top:20px;
+
+  }
+  .hamburg div{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+/* body css --------------------------*/
+.main{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    align-content: center;
+    display: block;
+
+}
+
+.panel{
+    min-width: 30%;
+    height: auto;
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top:5%;
+    padding: 0px;
+    display: flex;
+    flex-flow: column;
+    border-radius: 14px;
+}
+
+.panel-head{
+    margin: 0px;
+    padding: 0px;
+    text-align: center; 
+    color: RED;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #303030;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.pane{
+    background-color: #F1F0F0;
+    padding: 10%;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+/* form css --------------------- */
+
+input[type='text']{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding: 10px;
+    border-color: #303030;
+    border-radius: 5px;
+    outline-width: 0;
+    font-size: 18px;
+    width: 100%;
+
+}
+input[type='password']{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding: 10px;
+    border-color: #303030;
+    border-radius: 5px;
+    outline-width: 0;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+.form-ele{
+    margin: 10px;
+    padding: 10px;
+}
+
+form button{
+    background-color: #303030;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-style: bold;  
+    border-color: #303030;
+}
+
+form button:hover{
+    color: white;
+    background-color: #131313;
+}
+
+.form-ele label{
+    margin-right:20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 16px;
+} 
+
+
+.select-group{
+    position: relative;
+    font-family: Arial;
+    width: auto;
+}
+.select-group select{
+    width: 50%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    background-color: #303030;
+    border-radius: 5px;
+    border: none;
+}
+
+.select-group select:hover{
+    background-color: #303030;
+}
+
+@media only screen and (max-width: 600px) {
+    .panel{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top:5%;
+        padding: 0px;
+        display: flex;
+        flex-flow: column;
+        border-radius: 14px;
+    }
+    .nav-dropdown-content{
+        display: block;
+    } 
+  }
+
+  @media screen and (max-width: 600px) {
+    /* .dropdown-content a {display: none;} */
+    .dropdown-content {
+      float: right;
+      display: none;
+    }
+    .dropdown-content.responsive {position: relative;}
+    .dropdown-content.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .dropdown-content.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .hamburg{
+        display: block;
+    }
+    .header-items button{
+        display: none;
+    }
+}
+  
